@@ -13,9 +13,9 @@ export const TransactionColumns: ColumnDef<Transaction>[] = [
   {
     accessorKey: "type",
     header: "Tipo",
-    cell: ({ row: { original: transaction } }) => {
-      <TransactionTypeBadge transaction={transaction} />;
-    },
+    cell: ({ row: { original: transaction } }) => (
+      <TransactionTypeBadge transaction={transaction} />
+    ),
   },
 
   {
